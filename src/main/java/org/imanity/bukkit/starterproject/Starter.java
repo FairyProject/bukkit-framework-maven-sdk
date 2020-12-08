@@ -1,5 +1,6 @@
 package org.imanity.bukkit.starterproject;
 
+import org.imanity.framework.ClasspathScan;
 import org.imanity.framework.bukkit.plugin.ImanityPlugin;
 import org.imanity.framework.plugin.Plugin;
 import org.imanity.framework.plugin.PluginLoadOrder;
@@ -16,6 +17,7 @@ import org.imanity.framework.plugin.PluginType;
 //      loadBefore = "SomePlugin",
         type = PluginType.BUKKIT                              // Type
 )
+@ClasspathScan("org.imanity.bukkit.starterproject") // Replace it with your package name
 public class Starter extends ImanityPlugin {
 
     @Override
