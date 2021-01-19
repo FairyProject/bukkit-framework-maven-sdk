@@ -18,7 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Framework Version -->
-        <imanity.framework.version>1.0-SNAPSHOT</imanity.framework.version>
+        <imanity.framework.version>0.2-SNAPSHOT</imanity.framework.version>
     </properties>
 
     <build>

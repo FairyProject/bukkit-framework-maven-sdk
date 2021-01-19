@@ -1,7 +1,7 @@
 package org.imanity.bukkit.starterproject;
 
 import org.imanity.framework.ClasspathScan;
-import org.imanity.framework.bukkit.plugin.ImanityPlugin;
+import org.imanity.framework.bukkit.plugin.BukkitPlugin;
 import org.imanity.framework.plugin.Plugin;
 import org.imanity.framework.plugin.PluginLoadOrder;
 import org.imanity.framework.plugin.PluginType;
@@ -18,26 +18,26 @@ import org.imanity.framework.plugin.PluginType;
         type = PluginType.BUKKIT                              // Type
 )
 @ClasspathScan("org.imanity.bukkit.starterproject") // Replace it with your package name
-public class Starter extends ImanityPlugin {
+public class Starter extends BukkitPlugin {
 
     @Override
-    public void preEnable() {
-        // Before Imanity Framework boot up
+    public void onPreEnable() {
+        // Before Imanity Framework initalize this plugin
     }
 
     @Override
-    public void postEnable() {
-        // After Imanity Framework boot up, most of things are recommend to be done in here
+    public void onPluginEnable() {
+        // After Imanity Framework initalize to this plugin
     }
 
     @Override
-    public void preDisable() {
-        // Before Imanity Framework shut down, most of things are recommend to be done in here
+    public void onPluginDisable() {
+        // Plugin shutdown, and Before Imanity Framework shut down
     }
 
     @Override
-    public void postDisable() {
-        // After Imanity Framework shut down
+    public void onFrameworkFullyDisable() {
+        // After Imanity Framework fully shut down
     }
 
 }
