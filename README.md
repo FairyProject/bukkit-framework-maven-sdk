@@ -5,7 +5,7 @@ The Starter Project for Imanity Framework
 
 # How to Start?
 
-* 1. Clone the repository [https://github.com/Imanity-Software/bukkit-framework-start-project]
+* 1. Clone the repository [https://github.com/Imanity-Software/bukkit-framework-maven-sdk]
 
 
 * 2. Configure Your Maven Configuration (groupId, artifactId, version and dependencies)
